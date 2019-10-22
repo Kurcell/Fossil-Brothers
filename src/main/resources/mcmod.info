@@ -1,0 +1,14 @@
+[
+{
+"modid": "DinoMod",
+  "name": "Dino Craft",
+  "description": "You get dinos",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "logoFile": "assets/examplemod/textures/logo.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": [Bermin],
+  "credits": "Bermin"
+ }
+ ]
