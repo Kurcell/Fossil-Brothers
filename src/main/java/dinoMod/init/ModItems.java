@@ -6,7 +6,7 @@ import java.util.List;
 import dinoMod.items.ItemBase;
 import net.minecraft.item.Item;
 
-public class Items {
+public class ModItems {
 
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	

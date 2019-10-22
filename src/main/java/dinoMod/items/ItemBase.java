@@ -2,7 +2,7 @@ package dinoMod.items;
 
 import dinoMod.DinoMod;
 import dinoMod.init.IHasModel;
-import dinoMod.init.Items;
+import dinoMod.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,7 +13,7 @@ public class ItemBase extends Item implements IHasModel{
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MATERIALS);	
 		
-		Items.ITEMS.add(this);
+		ModItems.ITEMS.add(this);
 	}
 
 	@Override
