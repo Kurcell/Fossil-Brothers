@@ -5,13 +5,14 @@ import dinoMod.init.IHasModel;
 import dinoMod.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import tabs.DinoTab;
 
 public class ItemBase extends Item implements IHasModel{
 	
 	public ItemBase(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MATERIALS);	
+		setCreativeTab(DinoMod.dinoTab);	
 		
 		ModItems.ITEMS.add(this);
 	}

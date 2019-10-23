@@ -1,3 +1,5 @@
 item.old_bone.name=Fossil
 
 tile.fossil_ore.name=Fossil Ore
+
+itemGroup.dinoTab=Fossils
