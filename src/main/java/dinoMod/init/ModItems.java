@@ -5,6 +5,7 @@ import java.util.List;
 
 import dinoMod.items.ItemBase;
 import dinoMod.items.armor.ArmorBase;
+import dinoMod.items.staffs.Staff;
 import dinoMod.items.tools.ToolAxe;
 import dinoMod.items.tools.ToolHoe;
 import dinoMod.items.tools.ToolPickaxe;
@@ -17,6 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
@@ -41,6 +43,11 @@ public class ModItems {
 	public static final ItemAxe FOSSIL_AXE = new ToolAxe("fossil_axe",MATERIAL_FOSSIL);
 	public static final ItemSpade FOSSIL_SHOVEL = new ToolSpade("fossil_shovel",MATERIAL_FOSSIL);
 	public static final ItemHoe FOSSIL_HOE = new ToolHoe("fossil_hoe",MATERIAL_FOSSIL);
+	
+	//Staff
+	public static final Item STAFF = new Staff("staff");
+	
+	
 	
 	//Armor
 	public static final Item FOSSIL_HELMET = new ArmorBase("fossil_helmet", ARMOR_MATERIAL_FOSSIL, 1, EntityEquipmentSlot.HEAD);

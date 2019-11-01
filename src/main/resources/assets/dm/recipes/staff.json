@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " E ",
+        " F ",
+        " F "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        },
+
+	    "E":
+        {
+            "item": "minecraft:ender_eye"
+        }    
+    },
+    
+    "result":
+    {
+        "item": "dm:staff",
+        "count": 1
+    }
+}

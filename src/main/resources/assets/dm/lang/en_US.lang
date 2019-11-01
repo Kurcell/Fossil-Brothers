@@ -20,3 +20,6 @@ tile.fossil_block.name=Fossil Block
 
 //Tabs
 itemGroup.dinoTab=Fossils
+
+//Staff
+item.staff.name=Staff
