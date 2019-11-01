@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " FF",
+        " SF",
+        " S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        },
+
+	"S":
+        {
+            "item": "minecraft:stick"
+        }    
+    },
+    
+    "result":
+    {
+        "item": "dm:fossil_axe",
+        "count": 1
+    }
+}

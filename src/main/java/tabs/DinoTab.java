@@ -8,7 +8,7 @@ public class DinoTab extends CreativeTabs {
 	public DinoTab(String label) {
 		super("dinoTab");}
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ModItems.OLD_BONE);
+		return new ItemStack(ModItems.FOSSIL);
 	}
 
 }

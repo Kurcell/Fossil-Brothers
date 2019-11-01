@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F F",
+        "FFF",
+        "FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        }
+    },
+    
+    "result":
+    {
+        "item": "dm:fossil_chestplate",
+        "count": 1
+    }
+}

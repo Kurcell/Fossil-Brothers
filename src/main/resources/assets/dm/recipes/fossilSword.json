@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " F ",
+        " F ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        },
+
+	"S":
+        {
+            "item": "minecraft:stick"
+        }    
+    },
+    
+    "result":
+    {
+        "item": "dm:fossil_sword",
+        "count": 1
+    }
+}

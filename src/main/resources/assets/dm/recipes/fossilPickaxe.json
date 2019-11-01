@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+        " S ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        },
+
+	"S":
+        {
+            "item": "minecraft:stick"
+        }    
+    },
+    
+    "result":
+    {
+        "item": "dm:fossil_pickaxe",
+        "count": 1
+    }
+}

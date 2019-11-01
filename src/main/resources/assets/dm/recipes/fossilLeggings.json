@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+        "F F",
+        "F F"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil"
+        }
+    },
+    
+    "result":
+    {
+        "item": "dm:fossil_leggings",
+        "count": 1
+    }
+}

@@ -1,5 +1,22 @@
-item.old_bone.name=Fossil
+//Items
+item.fossil.name=Fossil
 
+//Tools
+item.fossil_sword.name=Fossil Sword
+item.fossil_pickaxe.name=Fossil Pickaxe
+item.fossil_axe.name=Fossil Axe
+item.fossil_shovel.name=Fossil Shovel
+item.fossil_hoe.name=Fossil Hoe
+
+//Armor
+item.fossil_helmet.name=Fossil Helmet
+item.fossil_chestplate.name=Fossil Chestplate
+item.fossil_leggings.name=Fossil Leggings
+item.fossil_boots.name=Fossil Boots
+
+//Blocks
 tile.fossil_ore.name=Fossil Ore
+tile.fossil_block.name=Fossil Block
 
+//Tabs
 itemGroup.dinoTab=Fossils
