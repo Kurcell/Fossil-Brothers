@@ -14,9 +14,13 @@ item.fossil_chestplate.name=Fossil Chestplate
 item.fossil_leggings.name=Fossil Leggings
 item.fossil_boots.name=Fossil Boots
 
+//Entities
+entity.dino.name=NecroHorse
+
 //Blocks
 tile.fossil_ore.name=Fossil Ore
 tile.fossil_block.name=Fossil Block
+tile.mana_flower.name=Mana Flower
 
 //Tabs
 itemGroup.dinoTab=Fossils

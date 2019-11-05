@@ -1,6 +1,6 @@
 package dinoMod.items.armor;
 
-import dinoMod.DinoMod;
+import dinoMod.Main;
 import dinoMod.init.IHasModel;
 import dinoMod.init.ModItems;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -12,7 +12,7 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(DinoMod.dinoTab);	
+		setCreativeTab(Main.dinoTab);	
 		
 		ModItems.ITEMS.add(this);
 		
@@ -20,7 +20,7 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 	@Override
 	public void registerModels() {
 
-		DinoMod.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 }

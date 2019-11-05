@@ -1,6 +1,6 @@
 package dinoMod.items.tools;
 
-import dinoMod.DinoMod;
+import dinoMod.Main;
 import dinoMod.init.IHasModel;
 import dinoMod.init.ModItems;
 import net.minecraft.item.Item.ToolMaterial;
@@ -12,7 +12,7 @@ public class ToolSpade extends ItemSpade implements IHasModel {
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(DinoMod.dinoTab);	
+		setCreativeTab(Main.dinoTab);	
 		
 		ModItems.ITEMS.add(this);
 	}
@@ -20,7 +20,7 @@ public class ToolSpade extends ItemSpade implements IHasModel {
 	@Override
 	public void registerModels() {
 
-		DinoMod.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 }

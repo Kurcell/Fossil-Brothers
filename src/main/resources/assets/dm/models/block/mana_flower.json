@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "dm:blocks/mana_flower"
+    }
+}

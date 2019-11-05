@@ -1,8 +1,10 @@
 package dinoMod;
 
+import dinoMod.init.ModEntities;
 import dinoMod.init.ModRecipes;
 import dinoMod.proxy.CommonProxy;
 import dinoMod.util.Reference;
+import dinoMod.util.handlers.RenderHandler;
 import dinoMod.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -17,10 +19,10 @@ import tabs.DinoTab;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 
-public class DinoMod {
+public class Main {
 
 	@Instance
-	public static DinoMod instance;
+	public static Main instance;
 	
 	public static final CreativeTabs dinoTab = new DinoTab("dinoTab");
 	
@@ -31,13 +33,15 @@ public class DinoMod {
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+		ModEntities.registerEntities();
+		RenderHandler.registerEntityRenders();
 		
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		ModRecipes.init();
+		ModRecipes.init(); 
 	}
 	
 	@EventHandler

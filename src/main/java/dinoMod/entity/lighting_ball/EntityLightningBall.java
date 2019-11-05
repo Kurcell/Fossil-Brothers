@@ -1,4 +1,4 @@
-package entity.lighting_ball;
+package dinoMod.entity.lighting_ball;
 
 import java.util.List;
 

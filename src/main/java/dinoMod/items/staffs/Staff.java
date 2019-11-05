@@ -1,10 +1,10 @@
 package dinoMod.items.staffs;
 
-import dinoMod.DinoMod;
+import dinoMod.Main;
+import dinoMod.entity.lighting_ball.EntityLightningBall;
 import dinoMod.init.IHasModel;
 
 import dinoMod.init.ModItems;
-import entity.lighting_ball.EntityLightningBall;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -20,7 +20,7 @@ public class Staff extends Item implements IHasModel {
 	public Staff(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(DinoMod.dinoTab);
+		setCreativeTab(Main.dinoTab);
 
 		ModItems.ITEMS.add(this);
 	}
@@ -43,7 +43,7 @@ public class Staff extends Item implements IHasModel {
 	
 	@Override
 	public void registerModels() {
-		DinoMod.proxy.registerItemRenderer(this, 0, "inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 		
 	}
 
