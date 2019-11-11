@@ -1,12 +1,14 @@
 package dinoMod;
 
 import dinoMod.init.ModEntities;
+import dinoMod.blocks.counter.TileEntityCounter;
 import dinoMod.init.ModRecipes;
 import dinoMod.proxy.CommonProxy;
 import dinoMod.util.Reference;
 import dinoMod.util.handlers.RenderHandler;
 import dinoMod.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -33,6 +35,7 @@ public class Main {
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+		GameRegistry.registerTileEntity(TileEntityCounter.class, new ResourceLocation("dm:tile_entity_counter"));
 		ModEntities.registerEntities();
 		RenderHandler.registerEntityRenders();
 		

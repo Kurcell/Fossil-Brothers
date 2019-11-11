@@ -13,9 +13,9 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.dinoTab);	
-		
+
 		ModItems.ITEMS.add(this);
-		
+
 	}
 	@Override
 	public void registerModels() {
