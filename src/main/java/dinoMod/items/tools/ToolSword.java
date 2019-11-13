@@ -15,6 +15,8 @@ public class ToolSword extends ItemSword implements IHasModel{
 		
 		ModItems.ITEMS.add(this);
 	}
+	
+	
 
 	@Override
 	public void registerModels() {

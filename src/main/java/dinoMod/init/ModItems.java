@@ -1,11 +1,13 @@
 package dinoMod.init;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import dinoMod.items.ItemBase;
 import dinoMod.items.armor.ArmorBase;
 import dinoMod.items.staffs.Staff;
+import dinoMod.items.tools.ManaSword;
 import dinoMod.items.tools.ToolAxe;
 import dinoMod.items.tools.ToolHoe;
 import dinoMod.items.tools.ToolPickaxe;
@@ -43,6 +45,8 @@ public class ModItems {
 	public static final ItemAxe FOSSIL_AXE = new ToolAxe("fossil_axe",MATERIAL_FOSSIL);
 	public static final ItemSpade FOSSIL_SHOVEL = new ToolSpade("fossil_shovel",MATERIAL_FOSSIL);
 	public static final ItemHoe FOSSIL_HOE = new ToolHoe("fossil_hoe",MATERIAL_FOSSIL);
+	
+	public static final ItemSword MANA_SWORD = new ManaSword("mana_sword",MATERIAL_FOSSIL);
 	
 	//Staff
 	public static final Item STAFF = new Staff("staff");
