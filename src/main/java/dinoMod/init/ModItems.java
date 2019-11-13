@@ -32,7 +32,7 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//Materials
-	public static final ToolMaterial MATERIAL_FOSSIL = EnumHelper.addToolMaterial("material_fossil", 1, 800, 5.0F, 1.0F, 10);
+	public static final ToolMaterial MATERIAL_FOSSIL = EnumHelper.addToolMaterial("material_fossil", 1, 800, 5.0F, 4.0F, 10);
 	public static final ArmorMaterial ARMOR_MATERIAL_FOSSIL = EnumHelper.addArmorMaterial("armor_material_fossil", Reference.MOD_ID + ":fossil", 13, 
 			new int[] {2,5,4,1}, 10, SoundEvents.ENTITY_SKELETON_STEP, 0.0F);
 	

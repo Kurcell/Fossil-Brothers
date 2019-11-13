@@ -23,7 +23,8 @@ import net.minecraft.world.World;
 
 public class ManaSword extends ItemSword implements IHasModel{
 
-	public ManaSword(String name, ToolMaterial material) {
+	public ManaSword(String name, ToolMaterial material) 
+	{
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
@@ -31,24 +32,28 @@ public class ManaSword extends ItemSword implements IHasModel{
 
 		ModItems.ITEMS.add(this);
 	}
-	
-	 @Override
-	    public void onUpdate(ItemStack stack, World world, Entity entity, int par4, boolean par5) {
-		 if(stack.getTagCompound() == null) {
-				stack.setTagCompound(new NBTTagCompound());
-				stack.getTagCompound().setInteger("Mana", 0);
-			}
-	       
-	    }
 
-	 @Override 
-	 public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack) {
-		 if(stack.getTagCompound().getInteger("Mana") > 0) {
-				stack.getTagCompound().setInteger("Mana", stack.getTagCompound().getInteger("Mana") - 5);
-			}
+	@Override
+	public void onUpdate(ItemStack stack, World world, Entity entity, int par4, boolean par5) 
+	{
+		if(stack.getTagCompound() == null)
+		{
+			stack.setTagCompound(new NBTTagCompound());
+			stack.getTagCompound().setInteger("Mana", 0);
+		}
+
+	}
+
+	@Override 
+	public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack)
+	{
+		if(stack.getTagCompound().getInteger("Mana") > 0) 
+		{
+			stack.getTagCompound().setInteger("Mana", stack.getTagCompound().getInteger("Mana") - 5);
+		}
 		return false;
-		 
-	 }
+
+	}
 
 	@Override
 	public void registerModels() {
@@ -68,24 +73,28 @@ public class ManaSword extends ItemSword implements IHasModel{
 			tooltip.add("Attack Buff: 0");
 		}
 	}
-	public double getAttackBuff(ItemStack stack) {
-		if(stack.getTagCompound().hasKey("Mana")) {
+
+	public double getAttackBuff(ItemStack stack) 
+	{
+		if(stack.getTagCompound().hasKey("Mana"))
+		{
 			return (double)stack.getTagCompound().getInteger(("Mana"))/100;
-		}else {
+		}else 
+		{
 			return 0D;
 		}
 	}
-	
+
 	@Override
 	public Multimap<String, AttributeModifier> getAttributeModifiers(EntityEquipmentSlot equipmentSlot, ItemStack stack)
-    {
+	{
 		Multimap<String, AttributeModifier> multimap = HashMultimap.<String, AttributeModifier>create();
 
-        if (equipmentSlot == EntityEquipmentSlot.MAINHAND && stack.hasTagCompound())
-        {
-            multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)this.getAttackDamage() + getAttackBuff(stack), 0));
-        }
+		if (equipmentSlot == EntityEquipmentSlot.MAINHAND && stack.hasTagCompound())
+		{
+			multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)this.getAttackDamage() + getAttackBuff(stack), 0));
+		}
 
-        return multimap;
-    }
+		return multimap;
+	}
 }
