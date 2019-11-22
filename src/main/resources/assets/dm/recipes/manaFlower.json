@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " D ",
+        "DBD",
+        " D "
+    ],
+    
+    "key":
+    {
+        "D":
+        {
+            "item": "minecraft:diamond"
+        },
+
+	"B":
+        {
+            "item": "minecraft:beacon"
+        }    
+    },
+    
+    "result":
+    {
+        "item": "dm:mana_flower",
+        "count": 1
+    }
+}

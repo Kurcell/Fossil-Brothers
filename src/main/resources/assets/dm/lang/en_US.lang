@@ -7,6 +7,8 @@ item.fossil_pickaxe.name=Fossil Pickaxe
 item.fossil_axe.name=Fossil Axe
 item.fossil_shovel.name=Fossil Shovel
 item.fossil_hoe.name=Fossil Hoe
+item.fossil_bow.name=Fossil Bow
+item.mana_sword.name=Mana Sword
 
 //Armor
 item.fossil_helmet.name=Fossil Helmet

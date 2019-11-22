@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "NNN",
+        "NDN",
+        "DFD"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "dm:fossil_sword"
+        },
+
+	    "N":
+        {
+            "item": "minecraft:quartz"
+        },
+        
+        "D":
+        {
+            "item": "minecraft:diamond"
+        }      
+    },
+    
+    "result":
+    {
+        "item": "dm:mana_sword",
+        "count": 1
+    }
+}

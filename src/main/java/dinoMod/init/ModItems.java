@@ -9,6 +9,7 @@ import dinoMod.items.armor.ArmorBase;
 import dinoMod.items.staffs.Staff;
 import dinoMod.items.tools.ManaSword;
 import dinoMod.items.tools.ToolAxe;
+import dinoMod.items.tools.ToolBow;
 import dinoMod.items.tools.ToolHoe;
 import dinoMod.items.tools.ToolPickaxe;
 import dinoMod.items.tools.ToolSpade;
@@ -45,6 +46,8 @@ public class ModItems {
 	public static final ItemAxe FOSSIL_AXE = new ToolAxe("fossil_axe",MATERIAL_FOSSIL);
 	public static final ItemSpade FOSSIL_SHOVEL = new ToolSpade("fossil_shovel",MATERIAL_FOSSIL);
 	public static final ItemHoe FOSSIL_HOE = new ToolHoe("fossil_hoe",MATERIAL_FOSSIL);
+	public static final ItemBow FOSSIL_BOW = new ToolBow("fossil_bow",MATERIAL_FOSSIL);
+	
 	
 	public static final ItemSword MANA_SWORD = new ManaSword("mana_sword",MATERIAL_FOSSIL);
 	
